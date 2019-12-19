@@ -1,0 +1,386 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'VirtualPianoBotGUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PianoKeys import *
+from PianoSongs import *
+import pyautogui
+
+
+def clicked1():
+     Keys.c1()
+
+def clicked2():
+     Keys.c2()
+
+def clicked3():
+     Keys.c3()
+
+def clicked4():
+     Keys.c4()
+
+def clicked5():
+     Keys.c5()
+
+###############################################
+
+def clicked6():
+     Keys.d1()
+
+def clicked7():
+     Keys.d2()
+
+def clicked8():
+     Keys.d3()
+
+def clicked9():
+     Keys.d4()
+
+def clicked10():
+     Keys.d5()
+
+#################################################
+
+def clicked11():
+     Keys.e1()
+
+def clicked12():
+     Keys.e2()
+
+def clicked13():
+     Keys.e3()
+
+def clicked14():
+     Keys.e4()
+
+def clicked15():
+     Keys.e5()
+
+###################################################
+
+def clicked16():
+     Keys.f1()
+
+def clicked17():
+     Keys.f2()
+
+def clicked18():
+     Keys.f3()
+
+def clicked19():
+     Keys.f4()
+
+def clicked20():
+     Keys.f5()
+
+#########################################################
+
+def clicked21():
+     Keys.g1()
+
+def clicked22():
+     Keys.g2()
+
+def clicked23():
+     Keys.g3()
+
+def clicked24():
+     Keys.g4()
+
+def clicked25():
+     Keys.g5()
+
+#####################################################
+
+
+def clicked26():
+     Keys.a1()
+
+def clicked27():
+     Keys.a2()
+
+def clicked28():
+     Keys.a3()
+
+def clicked29():
+     Keys.a4()
+
+def clicked30():
+     Keys.a5()
+
+########################################################
+
+def clicked31():
+     Keys.b1()
+
+def clicked32():
+     Keys.b2()
+
+def clicked33():
+     Keys.b3()
+
+def clicked34():
+     Keys.b4()
+
+def clicked35():
+     Keys.b5()
+     
+def clicked36():
+     Keys.b6()
+     
+class Ui_MainWindow(object):
+    
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1224, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(40, 190, 31, 141))
+        self.pushButton.setObjectName("C1")
+        self.pushButton.clicked.connect(clicked1)
+        
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(70, 190, 31, 141))
+        self.pushButton_2.setObjectName("C2")
+        self.pushButton_2.clicked.connect(clicked2)
+        
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(100, 190, 31, 141))
+        self.pushButton_3.setObjectName("C3")
+        self.pushButton_3.clicked.connect(clicked3)
+        
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(130, 190, 31, 141))
+        self.pushButton_4.setObjectName("C4")
+        self.pushButton_4.clicked.connect(clicked4)
+        
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setGeometry(QtCore.QRect(160, 190, 31, 141))
+        self.pushButton_5.setObjectName("C5")
+        self.pushButton_5.clicked.connect(clicked5)
+        
+        self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_6.setGeometry(QtCore.QRect(190, 190, 31, 141))
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.pushButton_6.clicked.connect(clicked6)
+        
+        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_7.setGeometry(QtCore.QRect(310, 190, 31, 141))
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.pushButton_7.clicked.connect(clicked7)
+        
+        self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_8.setGeometry(QtCore.QRect(220, 190, 31, 141))
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.pushButton_8.clicked.connect(clicked8)
+        
+        self.pushButton_9 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_9.setGeometry(QtCore.QRect(280, 190, 31, 141))
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.pushButton_9.clicked.connect(clicked9)
+        
+        self.pushButton_10 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_10.setGeometry(QtCore.QRect(250, 190, 31, 141))
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.pushButton_10.clicked.connect(clicked10)
+        
+        self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_11.setGeometry(QtCore.QRect(340, 190, 31, 141))
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.pushButton_11.clicked.connect(clicked11)
+        
+        self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_12.setGeometry(QtCore.QRect(460, 190, 31, 141))
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.pushButton_12.clicked.connect(clicked12)
+        
+        self.pushButton_13 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_13.setGeometry(QtCore.QRect(370, 190, 31, 141))
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.pushButton_13.clicked.connect(clicked13)
+        
+        self.pushButton_14 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_14.setGeometry(QtCore.QRect(430, 190, 31, 141))
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.pushButton_14.clicked.connect(clicked14)
+        
+        self.pushButton_15 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_15.setGeometry(QtCore.QRect(400, 190, 31, 141))
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.pushButton_15.clicked.connect(clicked15)
+        
+        self.pushButton_16 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_16.setGeometry(QtCore.QRect(490, 190, 31, 141))
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.pushButton_16.clicked.connect(clicked16)
+        
+        self.pushButton_17 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_17.setGeometry(QtCore.QRect(610, 190, 31, 141))
+        self.pushButton_17.setObjectName("pushButton_17")
+        self.pushButton_17.clicked.connect(clicked17)
+        
+        self.pushButton_18 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_18.setGeometry(QtCore.QRect(520, 190, 31, 141))
+        self.pushButton_18.setObjectName("pushButton_18")
+        self.pushButton_18.clicked.connect(clicked18)
+        
+        self.pushButton_19 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_19.setGeometry(QtCore.QRect(580, 190, 31, 141))
+        self.pushButton_19.setObjectName("pushButton_19")
+        self.pushButton_19.clicked.connect(clicked19)
+        
+        self.pushButton_20 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_20.setGeometry(QtCore.QRect(550, 190, 31, 141))
+        self.pushButton_20.setObjectName("pushButton_20")
+        self.pushButton_20.clicked.connect(clicked20)
+        
+        self.pushButton_21 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_21.setGeometry(QtCore.QRect(640, 190, 31, 141))
+        self.pushButton_21.setObjectName("pushButton_21")
+        self.pushButton_21.clicked.connect(clicked21)
+        
+        self.pushButton_22 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_22.setGeometry(QtCore.QRect(760, 190, 31, 141))
+        self.pushButton_22.setObjectName("pushButton_22")
+        self.pushButton_22.clicked.connect(clicked22)
+        
+        self.pushButton_23 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_23.setGeometry(QtCore.QRect(670, 190, 31, 141))
+        self.pushButton_23.setObjectName("pushButton_23")
+        self.pushButton_23.clicked.connect(clicked23)
+        
+        self.pushButton_24 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_24.setGeometry(QtCore.QRect(730, 190, 31, 141))
+        self.pushButton_24.setObjectName("pushButton_24")
+        self.pushButton_24.clicked.connect(clicked24)
+        
+        self.pushButton_25 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_25.setGeometry(QtCore.QRect(700, 190, 31, 141))
+        self.pushButton_25.setObjectName("pushButton_25")
+        self.pushButton_25.clicked.connect(clicked25)
+        
+        self.pushButton_26 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_26.setGeometry(QtCore.QRect(790, 190, 31, 141))
+        self.pushButton_26.setObjectName("pushButton_26")
+        self.pushButton_26.clicked.connect(clicked26)
+        
+        self.pushButton_27 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_27.setGeometry(QtCore.QRect(910, 190, 31, 141))
+        self.pushButton_27.setObjectName("pushButton_27")
+        self.pushButton_27.clicked.connect(clicked27)
+        
+        self.pushButton_28 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_28.setGeometry(QtCore.QRect(820, 190, 31, 141))
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.pushButton_28.clicked.connect(clicked28)
+        
+        self.pushButton_29 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_29.setGeometry(QtCore.QRect(880, 190, 31, 141))
+        self.pushButton_29.setObjectName("pushButton_29")
+        self.pushButton_29.clicked.connect(clicked29)
+        
+        self.pushButton_30 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_30.setGeometry(QtCore.QRect(850, 190, 31, 141))
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.pushButton_30.clicked.connect(clicked30)
+        
+        self.pushButton_31 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_31.setGeometry(QtCore.QRect(940, 190, 31, 141))
+        self.pushButton_31.setObjectName("pushButton_31")
+        self.pushButton_31.clicked.connect(clicked31)
+        
+        self.pushButton_32 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_32.setGeometry(QtCore.QRect(1060, 190, 31, 141))
+        self.pushButton_32.setObjectName("pushButton_32")
+        self.pushButton_32.clicked.connect(clicked32)
+        
+        self.pushButton_33 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_33.setGeometry(QtCore.QRect(970, 190, 31, 141))
+        self.pushButton_33.setObjectName("pushButton_33")
+        self.pushButton_33.clicked.connect(clicked33)
+        
+        self.pushButton_34 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_34.setGeometry(QtCore.QRect(1030, 190, 31, 141))
+        self.pushButton_34.setObjectName("pushButton_34")
+        self.pushButton_34.clicked.connect(clicked34)
+        
+        self.pushButton_35 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_35.setGeometry(QtCore.QRect(1000, 190, 31, 141))
+        self.pushButton_35.setObjectName("pushButton_35")
+        self.pushButton_35.clicked.connect(clicked35)
+        
+        self.pushButton_36 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_36.setGeometry(QtCore.QRect(1090, 190, 31, 141))
+        self.pushButton_36.setObjectName("pushButton_36")
+        self.pushButton_36.clicked.connect(clicked36)
+        
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1224, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_3.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_4.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_5.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_6.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_7.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_8.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_9.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_10.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_11.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_12.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_13.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_14.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_15.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_16.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_17.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_18.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_19.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_20.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_21.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_22.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_23.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_24.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_25.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_26.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_27.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_28.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_29.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_30.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_31.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_32.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_33.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_34.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_35.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_36.setText(_translate("MainWindow", "PushButton"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
