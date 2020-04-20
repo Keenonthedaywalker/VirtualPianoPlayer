@@ -10,6 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PianoKeys import *
 from PianoSongs import *
+from songFileWindow import *
 import pyautogui
 
 def clicked1():
@@ -135,33 +136,43 @@ def clicked36():
 
 #########################################################
 
-def createSongFile(songFileName):
-     print("Please name your song file")
-
+def createSongFile():
+    """ print("Please name your song file")
      songFileName = input()
-
      file = open(songFileName + ".txt",  "w+")
-
      print("Write something")
-
      userInput = input()
-
      file.write(userInput)
-
      file.close()
-
      file = open(songFileName + ".txt", "r")
-
      contents = file.read()
-
      list1 = [contents]
-
      print(contents)
-
-     file.close()
+     file.close()  """
+"""
+    songFile = open("songs.txt", "a")
+    songFile.write("\n" + input())
+    songFile.close() """
+    
 
 #def keyCaller(b):
 #     print("Test")
+
+def test():
+     openTextFile = open("songs.txt", "a")
+     openTextFile.write("Keys.c1()" + "\n")
+     openTextFile.close()
+
+def newSong():
+     createNewSongFile = open(input() + ".txt", "a")
+     createNewSongFile.write("TEster")
+     createNewSongFile.close()
+
+def openSongFileWindow(self):
+     self.window=QtWidgets.QMainWindow()
+     self.ui=Ui_MainWindow1()
+     self.ui.setup(self.window)
+     self.window.show()
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -174,6 +185,7 @@ class Ui_MainWindow(object):
         self.C1.setGeometry(QtCore.QRect(50, 180, 31, 141))
         self.C1.setObjectName("C1")
         self.C1.clicked.connect(clicked1)
+        self.C1.clicked.connect(test)
 
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(260, 180, 31, 141))
@@ -353,7 +365,7 @@ class Ui_MainWindow(object):
         self.song = QtWidgets.QPushButton(self.centralwidget)
         self.song.setGeometry(QtCore.QRect(420, 50, 201, 23))
         self.song.setObjectName("song")
-        self.song.clicked.connect(createSongFile)
+        self.song.clicked.connect(newSong)
         
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(40, 130, 41, 41))
@@ -454,6 +466,8 @@ class Ui_MainWindow(object):
         self.pushButton_64 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_64.setGeometry(QtCore.QRect(960, 130, 41, 41))
         self.pushButton_64.setObjectName("pushButton_64")
+
+        self.song.clicked.connect(openSongFileWindow)
         
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -540,7 +554,6 @@ class Ui_MainWindow(object):
         self.pushButton_64.setText(_translate("MainWindow", "F#_5"))
         self.menuKeyboard.setTitle(_translate("MainWindow", "Keyboard"))
         self.menuPlay_Song.setTitle(_translate("MainWindow", "Play Song"))
-
 
 if __name__ == "__main__":
     import sys
