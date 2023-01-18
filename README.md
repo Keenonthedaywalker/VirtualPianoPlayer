@@ -1,7 +1,7 @@
 # VirtualPianoPlayer
 An application specifically made for the Virtual Piano Website.
 
-# NOTE! This Project isn't completed yet! Also, the keys are messed up!
+# NOTE! This Project is still very much a work in project.
 
 # How to Use
 Go to the Virtual Piano Website: https://www.onlinepianist.com/virtual-piano
